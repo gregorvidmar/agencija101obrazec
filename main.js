@@ -111,7 +111,7 @@ function sendForm(formData){
         // Default options are marked with *
         return fetch(url, {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
-            mode: 'no-cors', // no-cors, cors, *same-origin
+            mode: 'cors', // no-cors, cors, *same-origin
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
