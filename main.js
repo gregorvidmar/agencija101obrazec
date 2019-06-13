@@ -73,7 +73,6 @@ function sendForm(formData){
         .then(msg => {
             console.log(msg)
             document.querySelector('#status-text').textContent = msg.message;
- 1       })
-
+         })
         .catch(error => console.error(error));
 }
