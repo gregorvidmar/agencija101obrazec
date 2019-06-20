@@ -55,8 +55,8 @@ function sendForm(formData){
     //ker se server odziva s CORS errorjem, sem najprej nastavil mode na 'no-cors', 
     //a sem tedaj prejemal le 422 errorje glede validacije podatkov, ki so bili zagotovo pravilni
     //zato sem uporabil proxy cors-anywhere, prek katerega lahko uspešno izvajam requeste 
-    url = 'https://cors-anywhere.herokuapp.com/http://obrazec.st.agencija101.si/post';
-    //url = 'http://obrazec.st.agencija101.si/post';
+    //url = 'https://cors-anywhere.herokuapp.com/http://obrazec.st.agencija101.si/post';
+    url = 'http://obrazec.st.agencija101.si/post';
 
     let request = new Request(url, {
         method: 'POST',
